@@ -1,5 +1,4 @@
 <?php
-
     
 class Banco{
     private $host;
@@ -11,8 +10,6 @@ class Banco{
     private $error;
     private $stmt;
 
-
- 
   
     public function __construct($arDadosBanco ){
         
@@ -39,9 +36,7 @@ class Banco{
             $this->error = $e->getMessage();
         }
 
-
-        //var_dump($this->error);
-
+       
     }
 
     public function query($query){
@@ -96,20 +91,6 @@ class Banco{
       return $this->dbh->lastInsertId();  
     }  
 
-
-
-
 }
-
-
-
-
-
-
-
-
-
-
-
 
 ?>
